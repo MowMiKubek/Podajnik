@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino</title><!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        body {
+            background: rgb(36,49,217);
+            background: linear-gradient(90deg, rgba(36,49,217,1) 0%, rgba(131,249,216,1) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main {
+            background: white;
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="card bg-light">
+        <div class="card-body">
+            <form action="/arduino" method="POST">
+                <h2>Podaj liczbę do wysłania na Serial</h2>
+                <input type="text" name="number" class="form-control my-3" placeholder="Liczba...">
+                <button type="submit" class="btn btn-primary btn-lg">Wyślij</button>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
