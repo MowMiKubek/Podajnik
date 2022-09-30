@@ -1,0 +1,10 @@
+.img-srubka{
+    max-width: 200px;
+    width: 100%;
+}
+
+.srubki-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
